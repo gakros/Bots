@@ -1,0 +1,7 @@
+$wshell = New-Object -ComObject WScript.Shell;
+for ($num=1;$num-le 1000000000000; $num++)
+{
+$wshell.SendKeys('dance '+'~')
+$random=Get-Random -Minimum 16 -Maximum 30
+Start-Sleep -seconds $random
+}
